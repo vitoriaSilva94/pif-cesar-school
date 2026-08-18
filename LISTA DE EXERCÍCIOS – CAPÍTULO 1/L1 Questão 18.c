@@ -9,3 +9,18 @@ Borrachas 234.54
 Canetas 42.04
 Cadernos 8.00
 Fitas 13.05*/
+
+#include <stdio.h>
+#include <stdlib.h>
+int main  ()
+{
+    float lapis = 4.88;
+    float borrachas = 234.54;
+    float canetas = 42.04;
+    float cadernos = 8.00;
+    float fitas = 13.05;
+
+    printf("Lapis %.2f\nBorrachas %.2f\nCanetas %.2f\nCadernos %.2f\nFitas %.2f",lapis ,borrachas ,canetas ,cadernos ,fitas);
+    system("PAUSE");
+    return 0;
+}
