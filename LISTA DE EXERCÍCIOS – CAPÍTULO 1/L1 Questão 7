@@ -1,0 +1,13 @@
+Descreva a saída exata (incluindo quebras de linha e tabulações) 
+que será impressa no console por cada uma das seguintes 
+instruções independentes do printf():
+
+a) printf("\n\tBom dia! Shirley."); O texto inicia na linha seguinte 
+com espaço do parágrafo. 
+b) printf("Você já tomou café? \n"); O texto inicia na primeira
+ linha com enter para o proximo texto iniciar na seguinte. 
+c) printf("\n\nA solução não existe!\nNão insista."); Enter duplo 
+o texto inica na terceira linha e outra quebra de linha nas duas 
+ultimas palavras.
+d) printf("Duas\tlinhas\tde\tsaída\nou\tuma?");
+e) printf("%s\n%s\n%s\n", "um", "dois", "três");
