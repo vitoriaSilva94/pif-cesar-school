@@ -1,5 +1,2 @@
-/*15. A diretiva #include, amplamente utilizada no topo dos arquivos C, é classificada como:
-a) Uma instrução C nativa (compilada diretamente em linguagem de máquina).
-b) Uma instrução específica de linguagens de programação orientadas a objetos.
+15. A diretiva #include, amplamente utilizada no topo dos arquivos C, é classificada como:
 c) Uma diretiva especial para o pré-processador C, executada antes da compilação.
-d) Um objeto de classe de armazenamento dinâmico na memória heap.*/

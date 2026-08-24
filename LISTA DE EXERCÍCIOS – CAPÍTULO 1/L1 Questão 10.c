@@ -4,3 +4,6 @@ variável na memória? Assinale a alternativa correta e complemente com sua just
 a) Depende exclusivamente da implementação do compilador utilizado no sistema.
 b) Verdadeiro (a linguagem C diferencia rigorosamente letras maiúsculas de minúsculas).
 c) Falso (letras maiúsculas e minúsculas são interpretadas como equivalentes pelo compilador).*/
+
+a letra B está correta. Uma linguagem "case sensitive" leva as diferenças de letras maiusculas e 
+minusculas em consideração. 'peso' 'Peso' e 'PESO' são considerados como diferentes. 
