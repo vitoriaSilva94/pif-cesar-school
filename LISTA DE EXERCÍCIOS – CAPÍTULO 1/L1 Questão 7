@@ -3,11 +3,12 @@ que será impressa no console por cada uma das seguintes
 instruções independentes do printf():
 
 a) printf("\n\tBom dia! Shirley."); O texto inicia na linha seguinte 
-com espaço do parágrafo. 
+com espaço do parágrafo(tabulação). 
 b) printf("Você já tomou café? \n"); O texto inicia na primeira
  linha com enter para o proximo texto iniciar na seguinte. 
 c) printf("\n\nA solução não existe!\nNão insista."); Enter duplo 
 o texto inica na terceira linha e outra quebra de linha nas duas 
 ultimas palavras.
-d) printf("Duas\tlinhas\tde\tsaída\nou\tuma?");
-e) printf("%s\n%s\n%s\n", "um", "dois", "três");
+d) printf("Duas\tlinhas\tde\tsaída\nou\tuma?");tabulações antes de 4 palavras e quebra de linha em "ou". 
+e) printf("%s\n%s\n%s\n", "um", "dois", "três");os textos "um", "dois", e "três" serão impressos. "um" 
+na primeria linha, "dois" na segunda e "três" na terceira.
