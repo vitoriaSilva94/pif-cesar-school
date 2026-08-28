@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 #include <stdio.h>
@@ -7,3 +8,12 @@ int main ()
 
     return 0;
 }
+=======
+#include <stdio.h>
+int main ()
+{
+    printf("\xC9 \xCD \xCD \xBB \n\xBA \t  \xBA \n\xC8 \xCD \xCD \xBC ");
+
+    return 0;
+}
+>>>>>>> 5644af86b68e72978b43841d3708a8f86ad4bdab
