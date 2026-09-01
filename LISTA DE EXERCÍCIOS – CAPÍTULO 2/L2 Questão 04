@@ -1,0 +1,11 @@
+/* Questão 04. Operadores de Atribuição Composta e Precedência — Os operadores de
+atribuição composta (+=, -=, *=, /=, %=) executam uma operação aritmética e uma atribuição
+simultaneamente. Determine quais serão os valores das variáveis a, b, c e d após a execução
+sequencial completa das seguintes instruções de inicialização e atribuição em C. Justifique seus
+cálculos apresentando a ordem de avaliação passo a passo:
+int a = 1, b = 2, c = 3, d = 4;
+a += b + c; // Valor final de a = ?
+b *= c = d + 2; // Valores finais de b e c = ?
+d %= a + a + a; // Valor final de d = ?
+d -= c -= b -= a; // Valor final de d, c e b = ?
+a += b += c += 7; // Valor final de a, b e c = ? */

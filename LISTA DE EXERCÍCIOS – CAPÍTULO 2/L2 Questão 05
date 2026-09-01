@@ -1,0 +1,14 @@
+/* Questão 05. Avaliação de Expressões Lógicas e Relacionais — Determine o resultado lógico (1
+para verdadeiro, 0 para falso) de cada uma das expressões relacionais e lógicas a seguir,
+assumindo que as variáveis foram inicializadas como: int i = 1, j = 2, k = 3, n = 2; float x = 3.3, y
+= 4.4;. Consulte a tabela de precedência do Capítulo 2 de Viviane.
+a) i < j + 3 => Resultado: ?
+b) 2 * i - 7 <= j - 8 => Resultado: ?
+c) -x + y >= 2.0 * y => Resultado: ?
+d) x == y => Resultado: ?
+e) !(n - j) => Resultado: ?
+f) !n - j => Resultado: ?
+g) i && j && k => Resultado: ?
+h) i || j - 3 && k => Resultado: ?
+i) i < j && 2 >= k => Resultado: ?
+j) i == 2 || j == 4 || k == 5 => Resultado: ? */
