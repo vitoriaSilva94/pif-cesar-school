@@ -5,3 +5,12 @@ tarefa:
 Leia um único número inteiro fornecido pelo usuário e exiba uma única mensagem no console
 que mostre esse mesmo valor nas seguintes representações simultâneas: base decimal (%d), base
 hexadecimal em caixa baixa (%x), base octal (%o) e o caractere correspondente à tabela ASCII (%c). */
+
+#include <stdio.h>
+int main (){
+    int numero;
+    printf("Digite um número para converter:");
+    scanf("%d", &numero);
+    printf ("Decimal: %d, Hexadicmal:%x, Octal:%o, ASCII:%c.",numero ,numero ,numero ,numero);
+    return 0;
+}
