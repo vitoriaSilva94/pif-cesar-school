@@ -2,3 +2,17 @@
 leia do teclado uma velocidade expressa em quilômetros por hora (km/h) e exiba o seu valor
 convertido e formatado para metros por segundo (m/s). Use a constante física de conversão: m/s =
 km/h / 3.6. */
+#include <stdio.h>
+ 
+int main() {
+    float kmh;
+ 
+    printf("Digite a velocidade em km/h: ");
+    scanf("%f", &kmh);
+ 
+    float ms = kmh / 3.6;
+ 
+    printf("%.2f km/h = %.4f m/s\n", kmh, ms);
+ 
+    return 0;
+}

@@ -3,3 +3,33 @@ que ofereça suporte ao cálculo de três geometrias fundamentais. O usuário de
 necessários e o programa exibirá: a) A área de um quadrado de lado L; b) A área de um retângulo
 de base B e altura H; c) A área de um triângulo retângulo de base B e altura H. Todos os valores
 de entrada e saída devem ser numéricos de ponto flutuante. */
+#include <stdio.h>
+ 
+int main() {
+    float L, B, H;
+ 
+    printf("=== Calculo de Areas de Figuras Planas ===\n\n");
+ 
+    /* Quadrado */
+    printf("QUADRADO\n");
+    printf("Digite o lado L: ");
+    scanf("%f", &L);
+    printf("Area do quadrado: %.2f\n\n", L * L);
+ 
+    /* Retangulo */
+    printf("RETANGULO\n");
+    printf("Digite a base B: ");
+    scanf("%f", &B);
+    printf("Digite a altura H: ");
+    scanf("%f", &H);
+    printf("Area do retangulo: %.2f\n\n", B * H);
+ 
+    /* Triangulo retangulo */
+    printf("TRIANGULO RETANGULO\n");
+    printf("Digite a base B: ");
+    scanf("%f", &B);
+    printf("Digite a altura H: ");
+    scanf("%f", &H);
+    printf("Area do triangulo: %.2f\n", (B * H) / 2.0);
+ 
+    return 0;

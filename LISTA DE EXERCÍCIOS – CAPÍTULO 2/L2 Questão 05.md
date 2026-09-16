@@ -30,7 +30,7 @@ e) !(n - j)         => Resultado: 1 (verdadeiro)
 1
 
 
-f) !n - j       => Resultado: ?
+f) !n - j       => Resultado: -2
 !2 - 2
 0 -2
 -2
@@ -38,13 +38,21 @@ f) !n - j       => Resultado: ?
 
 g) i && j && k      => Resultado: verdadeiro
 1 && 2 && 3
+1&&1
+i || ((j-3) && k)
+1 || ((2-3) && 3) 
+1 || ((-1) && 3) 
+1 || 1 
+
+h) i || j - 3 && k      => Resultado: 1 (verdadeiro)
+(1 < 2) && (2 >= 3)
+1 && 0
 
 
-h) i || j - 3 && k      => Resultado: ?
+i) i < j && 2 >= k      => Resultado: 0 (falso)
+(1 < 2) && (2 >= 3)
+1 && 0 
 
-int i = 1, j = 2, k = 3, n = 2
-float x = 3.3, y= 4.4
-i) i < j && 2 >= k      => Resultado: ?
-
-
-j) i == 2 || j == 4 || k == 5       => Resultado: ? */
+j) i == 2 || j == 4 || k == 5       => Resultado: ? 0 (falso)
+(1==2) || (2==4) || (3==5)
+ 0 || 0 || 0 

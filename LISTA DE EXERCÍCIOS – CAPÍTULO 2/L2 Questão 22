@@ -3,3 +3,17 @@ solicite e leia uma letra maiúscula do usuário. O programa deve convertê-la e
 minúscula utilizando operações aritméticas de deslocamento na tabela ASCII (offset de 32 posições
 ou através da subtração do caractere 'A' e adição de 'a'). Não utilize funções prontas de bibliotecas
 como <ctype.h>. */
+#include <stdio.h>
+ 
+int main() {
+    char maiuscula;
+ 
+    printf("Digite uma letra maiuscula: ");
+    scanf(" %c", &maiuscula);
+ 
+    char minuscula = maiuscula + 32;
+ 
+    printf("Letra minuscula: %c\n", minuscula);
+ 
+    return 0;
+}

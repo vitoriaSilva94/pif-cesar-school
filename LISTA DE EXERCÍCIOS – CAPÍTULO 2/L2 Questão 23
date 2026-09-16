@@ -5,3 +5,29 @@ Minutos e Segundos de forma independente; b) A duração total da experiência e
 estritamente em segundos. O programa deve calcular e exibir na tela o horário exato de término
 do experimento no formato hh:mm:ss. Utilize os operadores de divisão (/) e resto da divisão (%)
 para obter os novos valores de tempo de forma estruturada. */
+
+#include <stdio.h>
+ 
+int main() {
+    int hora_inicio, min_inicio, seg_inicio;
+    int duracao_seg;
+ 
+    printf("Calculo de Horario de Termino\n");
+    printf("Horario de inicio:\n");
+    printf("Horas:   "); scanf("%d", &hora_inicio);
+    printf("Minutos: "); scanf("%d", &min_inicio);
+    printf("Segundos: "); scanf("%d", &seg_inicio);
+    printf("Duracao total do experimento (em segundos): ");
+    scanf("%d", &duracao_seg);
+ 
+    
+    int total_seg = hora_inicio * 3600 + min_inicio * 60 + seg_inicio + duracao_seg;
+ 
+    int hora_fim = (total_seg / 3600) % 24;   
+    int min_fim  = (total_seg % 3600) / 60;
+    int seg_fim  =  total_seg % 60;
+ 
+    printf("Horario de termino: %02d:%02d:%02d\n", hora_fim, min_fim, seg_fim);
+ 
+    return 0;
+}

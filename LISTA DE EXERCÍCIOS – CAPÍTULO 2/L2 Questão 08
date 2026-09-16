@@ -2,3 +2,17 @@
 leia do teclado um número inteiro fornecido pelo usuário. O programa deve calcular e exibir: a) O
 seu quadrado (valor inteiro); b) A sua décima parte (valor real, com precisão de duas casas
 decimais). Garanta que o cálculo da décima parte não sofra de truncamento de divisão inteira. */
+#include <stdio.h>
+ 
+int main() {
+    int n;
+ 
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &n);
+ 
+    printf("Quadrado: %d\n", n * n);
+    /* Dividindo por 10.0 (ponto flutuante) evita o truncamento da divisao inteira */
+    printf("Decima parte: %.2f\n", n / 10.0);
+ 
+    return 0;
+}

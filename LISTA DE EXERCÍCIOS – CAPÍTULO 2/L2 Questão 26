@@ -4,3 +4,24 @@ largura do terreno em metros; b) O preço unitário do metro de arame farpado (e
 que o cercamento de segurança exige exatamente 3 fios de arame esticados ao longo do
 perímetro do terreno, calcule e mostre na tela quantos metros de arame farpado devem ser
 comprados e o custo total do cercamento. */
+#include <stdio.h>
+ 
+int main() {
+    float comprimento, largura, preco_metro;
+ 
+    printf("Comprimento do terreno (m): ");
+    scanf("%f", &comprimento);
+    printf("Largura do terreno (m): ");
+    scanf("%f", &largura);
+    printf("Preco por metro de arame farpado (R$): ");
+    scanf("%f", &preco_metro);
+ 
+    float perimetro    = 2 * (comprimento + largura);
+    float metros_arame = perimetro * 3;          /* 3 fios ao longo de todo o perimetro */
+    float custo_total  = metros_arame * preco_metro;
+ 
+    printf("Metros de arame necessarios: %.2f m\n", metros_arame);
+    printf("Custo total do cercamento:   R$ %.2f\n", custo_total);
+ 
+    return 0;
+}

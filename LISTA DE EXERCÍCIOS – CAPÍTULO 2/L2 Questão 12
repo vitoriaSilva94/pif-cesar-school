@@ -2,3 +2,24 @@
 receba um número inteiro do usuário e, utilizando exclusivamente os operadores unários de
 incremento (++) e decremento (--), exiba o seu antecessor e o seu sucessor no console,
 justificando sua implementação lógica. */
+
+#include <stdio.h>
+ 
+int main() {
+    int n;
+ 
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &n);
+ 
+    /* Usamos variaveis auxiliares para nao alterar o valor original de n */
+    int antecessor = n;
+    antecessor--;   /* decremento: antecessor = n - 1 */
+ 
+    int sucessor = n;
+    sucessor++;     /* incremento: sucessor = n + 1 */
+ 
+    printf("Antecessor de %d: %d\n", n, antecessor);
+    printf("Sucessor de %d: %d\n", n, sucessor);
+ 
+    return 0;
+}

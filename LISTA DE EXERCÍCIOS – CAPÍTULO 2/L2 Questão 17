@@ -2,3 +2,18 @@
 console o valor do raio de um círculo (ponto flutuante). O programa deve calcular e exibir o valor
 de sua Área (A = Pi * R^2) e de sua Circunferência (C = 2 * Pi * R). Defina o valor de Pi como a
 constante 3.141593. */
+#include <stdio.h>
+ 
+#define PI 3.141593
+ 
+int main() {
+    float raio;
+ 
+    printf("Digite o raio do circulo: ");
+    scanf("%f", &raio);
+ 
+    printf("Area: %.4f\n", PI * raio * raio);
+    printf("Circunferencia: %.4f\n", 2 * PI * raio);
+ 
+    return 0;
+}

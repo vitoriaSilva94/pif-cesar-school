@@ -3,3 +3,22 @@ para o usuário inserir os valores correspondentes aos dois catetos (lado_a e la
 triângulo retângulo. O programa deve calcular e exibir na tela o comprimento de sua hipotenusa.
 Dica: utilize o teorema de Pitágoras (hipotenusa = raiz quadrada da soma dos quadrados dos
 catetos), importando as funções pow() ou sqrt() de <math.h>. */
+
+#include <stdio.h>
+#include <math.h>
+ 
+int main() {
+    float lado_a, lado_b;
+ 
+    printf("Digite o cateto a: ");
+    scanf("%f", &lado_a);
+    printf("Digite o cateto b: ");
+    scanf("%f", &lado_b);
+ 
+
+    float hipotenusa = sqrt(lado_a * lado_a + lado_b * lado_b);
+ 
+    printf("Hipotenusa: %.4f\n", hipotenusa);
+ 
+    return 0;
+}

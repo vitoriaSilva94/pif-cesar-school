@@ -4,3 +4,24 @@ usuário a altura de cada degrau (em centímetros) e a altura total que o usuár
 subindo a escada (em metros). O programa deve calcular e exibir o número mínimo de degraus
 que ele deve subir. Certifique-se de realizar a compatibilidade de unidades de medida (metros vs.
 centímetros). */
+#include <stdio.h>
+ 
+int main() {
+    int altura_degrau_cm;
+    float altura_total_m;
+ 
+    printf("Altura de cada degrau (em cm): ");
+    scanf("%d", &altura_degrau_cm);
+    printf("Altura total a subir (em metros): ");
+    scanf("%f", &altura_total_m);
+ 
+    
+    int altura_total_cm = (int)(altura_total_m * 100);
+ 
+  
+    int degraus = (altura_total_cm + altura_degrau_cm - 1) / altura_degrau_cm;
+ 
+    printf("Numero minimo de degraus: %d\n", degraus);
+ 
+    return 0;
+}

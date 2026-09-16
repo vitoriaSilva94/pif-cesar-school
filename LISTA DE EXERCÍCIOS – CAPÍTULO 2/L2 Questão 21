@@ -3,3 +3,19 @@ cada caractere a um valor inteiro único de 1 byte. Desenvolva um programa em C 
 caractere do teclado informado pelo usuário e exiba na tela esse mesmo caractere formatado como
 um número inteiro. Escreva uma breve explicação em comentários no seu código sobre o que esse
 número representa. */
+#include <stdio.h>
+ 
+int main() {
+    char c;
+ 
+    /* A tabela ASCII associa um numero inteiro de 0 a 127 a cada caractere.
+       Por exemplo: 'A' = 65, 'a' = 97, '0' = 48, espaco = 32.
+       Em C, um char pode ser tratado como inteiro, pois armazena 1 byte. */
+ 
+    printf("Digite um caractere: ");
+    scanf(" %c", &c);
+ 
+    printf("O caractere '%c' corresponde ao codigo ASCII: %d\n", c, c);
+ 
+    return 0;
+}

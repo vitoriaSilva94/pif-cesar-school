@@ -3,3 +3,24 @@ que leia quatro notas escolares de um aluno. Calcule e exiba no console: a) A m√
 simples das notas; b) A m√©dia ponderada das notas, assumindo que as provas possuem os
 seguintes pesos sequenciais: Peso 1 para as provas 1 e 2, e Peso 2 para as provas 3 e 4. Ambos
 os resultados devem ser representados com duas casas decimais. */
+#include <stdio.h>
+ 
+int main() {
+    float n1, n2, n3, n4;
+ 
+    printf("Digite as 4 notas do aluno:\n");
+    printf("Nota 1: "); scanf("%f", &n1);
+    printf("Nota 2: "); scanf("%f", &n2);
+    printf("Nota 3: "); scanf("%f", &n3);
+    printf("Nota 4: "); scanf("%f", &n4);
+ 
+    float media_simples = (n1 + n2 + n3 + n4) / 4.0;
+ 
+    /* Pesos: 1 para n1 e n2, 2 para n3 e n4. Soma dos pesos = 1+1+2+2 = 6 */
+    float media_ponderada = (n1 * 1 + n2 * 1 + n3 * 2 + n4 * 2) / 6.0;
+ 
+    printf("Media aritmetica simples: %.2f\n", media_simples);
+    printf("Media ponderada: %.2f\n", media_ponderada);
+ 
+    return 0;
+}
