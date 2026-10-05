@@ -1,19 +1,13 @@
-<<<<<<< HEAD
-
-
 #include <stdio.h>
-int main ()
-{
-    printf("\xC9 \xCD \xCD \xBB \n\xBA \t  \xBA \n\xC8 \xCD \xCD \xBC ");
+#include <stdlib.h>
 
+int main()
+{
+    printf("%c%c%c%c\n", '\xC9', '\xCD', '\xCD', '\xBB');
+    printf("%c  %c\n", '\xBA', '\xBA');
+    printf("%c  %c\n", '\xBA', '\xBA');
+    printf("%c%c%c%c\n", '\xC8', '\xCD', '\xCD', '\xBC');
+
+    system("PAUSE");
     return 0;
 }
-=======
-#include <stdio.h>
-int main ()
-{
-    printf("\xC9 \xCD \xCD \xBB \n\xBA \t  \xBA \n\xC8 \xCD \xCD \xBC ");
-
-    return 0;
-}
->>>>>>> 5644af86b68e72978b43841d3708a8f86ad4bdab
