@@ -63,6 +63,62 @@ c) !k && (x + y >= 7.5) => Resultado: ?
 1 (verdade)
 
 d) !(i == j) || (y / x == 2.0) => Resultado: ?
+!(2 == 3) || (2.0 == 2.0)
+!(0) || (1)
+1 || 1
+1 (verdade)
 
 e) i == 2 && j == 4 || k == 0 => Resultado: ?
+2 == 2 && 3 == 4 || 0 == 0
+0 || 1
+1 (verdade)
+
+Questão 05. 
+a) O while testa a condição antes de executar o bloco, então pode executar zero vezes.
+O do-while executa o bloco primeiro e testa depois, então executa no mínimo uma vez.
+
+b) O for é mais elegante e legível quando o número de repetições é conhecido ou controlado por um contador: 
+inicialização, condição e incremento ficam juntos no cabeçalho. 
+
+c) while (condicao); não é erro de compilação, é um erro de lógica. O ; é interpretado como o corpo do laço (comando vazio). 
+Se condicao for verdadeira e nada mudar seu valor, o programa fica em laço infinito, e o bloco que vinha logo abaixo nunca é executado como corpo do laço.
+
+Questão 06. 
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+int i;
+for (i = 1; i <= 10; i++) {
+if (i == 5) continue;
+if (i == 8) break;
+int soma = 0;
+soma += i * i;
+}
+printf("Soma final = %d\n", soma);
+system("PAUSE");
+return 0;
+}
+a) A variável soma foi declarada dentro do bloco do for, então só existe ali. 
+O printf está fora do bloco, onde soma é desconhecida (erro de escopo: identificador não declarado).
+b) Iterações executadas: i = 1, 2, 3, 4, 6, 7.
+i = 5: continue pula o resto do corpo e passa para a próxima iteração (i = 6).
+i = 8: break encerra o laço imediatamente, então i = 9 e 10 nunca rodam.
+c) #include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int i;
+    int soma = 0;               /* declarada fora do laço */
+    for (i = 1; i <= 10; i++) {
+        if (i == 5) continue;
+        if (i == 8) break;
+        soma += i * i;
+    }
+    printf("Soma final = %d\n", soma);
+    system("PAUSE");
+    return 0;
+}
+
+
+Questão 07. A ficha pula da questão 06 para a questão 08, não tem questão 07 
 
