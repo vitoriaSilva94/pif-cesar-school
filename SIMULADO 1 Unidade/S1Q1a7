@@ -1,0 +1,68 @@
+Questão 01.
+c) Todos os pares de nomes ('valor'/'VALOR', 'peso'/'Peso', 'taxa'/'TAXA') representam identificadores
+totalmente distintos para o compilador.
+
+Questão 02. 
+#include <stdio.h>
+#include <stdlib.h>; <- não precisa de ponto e vírgula
+int Main()       <- a função não funciona por causa do M maiúsculo. C é case sensitive. 
+{
+int idade = 20;
+printf( A idade do aluno eh: %d anos.. , idade);   <- não tem aspas dentro do parêntese indicando o que deve ser impresso
+
+cout << endl;   <- isso não é de linguagem c
+system("PAUSE");
+return 0;
+}
+
+Questão 03. 
+int a = 2, b = 4, c = 5, d = 10;
+a += b + c; // Valor final de a = ?
+a+= 4 + 5
+a+= 9
+a = 2+9
+a= 11
+
+b *= c = d - 2; // Valores finais de b e c = ?
+b*= c = 10 - 2
+b = 4 * 8
+b = 32
+
+a=11 b=32 c=8 d=10
+d %= a + 3; // Valor final de d = ?
+
+d%= 11 + 3
+d%= 14
+d = 10/14
+d = 10
+
+a += b += c += 5; // Valores finais de a, b e c = ?
+a+= b+= c= 8 + 5
+a+= b+= c=13
+a+= b = 32 + 13
+a+= b = 45
+a = 11+55
+a= 56
+
+a= 56 b=45 c=13 d=10
+
+Questão 04.  i = 2, j = 3, k = 0  x = 2.5, y = 5.0. 
+
+a) i < j + 2 => Resultado: ?
+1 + 2
+1 (verdade)
+
+b) 2 * i - 5 <= j - 4 => Resultado: ?
+4-5 <= 3-4
+-1 <= -1
+1 (verdade)
+
+c) !k && (x + y >= 7.5) => Resultado: ?
+!(0) && (7,5 >= 7,5)
+1 && 1
+1 (verdade)
+
+d) !(i == j) || (y / x == 2.0) => Resultado: ?
+
+e) i == 2 && j == 4 || k == 0 => Resultado: ?
+
