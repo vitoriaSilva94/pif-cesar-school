@@ -7,6 +7,7 @@ b) Em C não existe um tipo lógico no padrão ANSI C (C89): qualquer expressão
 c) O bloco será EXECUTADO. A instrução if (x = -5) atribui -5 a x e o valor da expressão é -5. Como o padrão ANSI C define que a condição do if é verdadeira quando o valor da expressão é diferente de zero, e -5 é diferente de zero, o teste é verdadeiro. Ao final, x vale -5.
 
 
+
 Questão 02. Associação do Comando else e Aninhamento de Decisões
 
 int x = 15, y = 5;
@@ -34,6 +35,7 @@ if (x > 10) {
 Com x = 15 e y = 5, nada é impresso nessa versão.
 
 
+
 Questão 03. Operador Condicional Ternário vs. Estrutura if-else
 
 media = (nota1 + nota2) / 2.0;
@@ -53,6 +55,7 @@ if (media >= 7.0) {
 c) Não. O ternário é uma EXPRESSÃO que produz um valor, enquanto o if-else é um COMANDO. Cada ramo do ternário precisa ser uma expressão única que resulte em um valor; ele não comporta blocos com vários comandos, declarações de variáveis, laços ou chamadas de comandos como return/break. Quando cada ramo precisa executar vários comandos (por exemplo, vários printf e atribuições), é necessário usar if-else com chaves. O ternário é indicado apenas para escolher entre dois valores de forma simples e curta.
 
 
+
 Questão 04. Seleção Múltipla com switch-case e Efeito Fall-Through
 
 a) Saída exata:
@@ -65,6 +68,7 @@ Como codigo vale 2, a execução entra em case 2 e imprime "Prata". Esse case n�
 b) O break encerra o switch imediatamente e desvia a execução para depois do bloco, impedindo que os cases seguintes sejam executados. Quando ele é omitido, ocorre o efeito fall-through (execução em cascata): a execução continua nos cases seguintes até encontrar um break ou o fim do switch.
 
 c) A expressão do switch deve ser de tipo inteiro: int, char, short, long (com ou sem sinal) e constantes de enumeração (enum). Os valores dos case devem ser constantes inteiras. Não é permitido usar float ou double, pois o padrão exige expressão de tipo inteiro; números reais têm representação aproximada e comparações de igualdade exata com eles não são confiáveis.
+
 
 
 Questão 05. Avaliação de Curto-Circuito em Operadores Lógicos
@@ -84,6 +88,7 @@ b) Curto-circuito é a técnica em que a avaliação de uma expressão lógica p
 - Operador OU (||): se o primeiro operando é verdadeiro, o resultado é verdadeiro e o segundo operando não é avaliado. Só avalia o segundo se o primeiro for falso.
 
 c) Com if (a == 0 || ++b > 5): a == 0 é verdadeiro, então o || já tem o resultado verdadeiro e ++b NÃO é executado. Assim b = 5 e, como a condição é verdadeira, c += 10 resulta em c = 20. Valores finais: b = 5 e c = 20.
+
 
 
 Questão 06. Construções else-if e Análise Lógica de Intervalos
